@@ -14,25 +14,22 @@ module.exports = {
       chainId: 5,
     },
   },
+
   etherscan: {
-    apikey: {
+    apiKey: {
       goerli: ETHERSCAN_API_KEY,
     },
-    etherscan: {
-      apiKey: {
-        goerli: "F41UHJ8QWGI86FPGMZBZIHVPPAHX6XU6F3",
-      },
-      customChains: [
-        {
-          network: "goerli",
-          chainId: 5,
-          urls: {
-            apiURL: "https://api-goerli.etherscan.io/api",
-            browserURL: "https://goerli.etherscan.io",
-          },
+    customChains: [
+      {
+        network: "goerli",
+        chainId: 5,
+        urls: {
+          apiURL: "https://api-goerli.etherscan.io/api",
+          browserURL: "https://goerli.etherscan.io",
         },
-      ],
-    },
+      },
+    ],
   },
+
   solidity: "0.8.19",
 };
